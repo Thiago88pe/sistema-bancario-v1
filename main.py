@@ -54,6 +54,11 @@ while True:
 
     elif opcao == 'e':
         print(' Extrato '.center(35, '-'))
+        if not extrato:
+            print('Não houveram movimentações.')
+        print(extrato)
+        print(f'Valor em conta: R$ {saldo:.2f}')
+        print('-'.center(35, '-'))
 
     elif opcao == 'q':
         print('-'.center(35, '-'))
